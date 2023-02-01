@@ -1,0 +1,10 @@
+.header {
+  padding: 1rem 0;
+
+  &__title {
+    font-family: $fontTitle;
+    margin: 0;
+    @include pxToRem(64);
+    text-align: center;
+  }
+}

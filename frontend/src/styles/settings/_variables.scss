@@ -1,0 +1,24 @@
+// COLORS
+$primaryLight: #9dfdaf; // light green
+$primaryMain: #43d9ac; // green
+$primaryDark: #00b9a2; // dark green
+$primaryContrast: #1e2329; // grey text on green
+
+// FONTS
+$fontTitle: "Nickainley", Georgia, Helvetica, sans-serif !default;
+$fontText: "Roboto", Arial, Helvetica, sans-serif !default;
+
+// TEXT AND TITLE SIZE
+$textXS: 1rem; // 16px
+$textSM: 1.25rem; // 20px
+$textMD: 1.5rem; // 24px
+$textLG: 2rem; // 32px
+$textXL: 3rem; // 48px
+$textXXL: 4rem; // 64px
+
+// SIZES
+$mainHeight: calc(100dvh - 106px);
+$mainWidthNavHeight: calc(100dvh - 172px);
+$captureInMainHeight: calc(100% - 103px);
+$pictureInMainHeight: calc(100% - 132px);
+$captureInMainWidth: calc($captureInMainHeight / 4 * 3);
