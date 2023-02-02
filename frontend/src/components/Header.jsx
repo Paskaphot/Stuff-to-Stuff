@@ -1,7 +1,10 @@
 function Header() {
   return (
     <header className="header">
-      <h1 className="header__title">Coucou</h1>
+      <div className="header__logoWrapper">
+        <img src="/images/logo.png" alt="logo" />
+      </div>
+      <h1 className="header__title">Stuffer</h1>
     </header>
   );
 }

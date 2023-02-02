@@ -1,13 +1,29 @@
 .main {
-  padding: 0 1rem 1rem;
+  padding: 1rem;
+  max-width: 992px;
+  margin: 0 auto;
+  min-height: calc(100% - 74px);
 
-  &--form {
-    min-height: $mainHeight;
+  &--verticalCenter {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 2rem;
   }
-  &--nav {
-    min-height: $mainWidthNavHeight;
+}
+
+.flexWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+
+  @media screen and (min-width: 650px) {
+    flex-direction: row;
+  }
+
+  &__item {
+    width: 300px;
   }
 }

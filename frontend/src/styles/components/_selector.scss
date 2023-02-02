@@ -1,0 +1,18 @@
+.selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+
+  &__title {
+    font-weight: 600;
+    margin: 0;
+    @include pxToRem(24);
+    text-align: center;
+    color: $primary75;
+  }
+
+  &_btn {
+    text-align: center;
+  }
+}

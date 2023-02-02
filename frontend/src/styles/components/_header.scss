@@ -1,10 +1,21 @@
 .header {
   padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: bottom;
+  gap: 1rem;
 
   &__title {
-    font-family: $fontTitle;
+    font-weight: 600;
     margin: 0;
     @include pxToRem(64);
-    text-align: center;
+    color: $primary75;
+  }
+
+  &__logoWrapper {
+    width: 60px;
+    img {
+      max-width: 100%;
+    }
   }
 }

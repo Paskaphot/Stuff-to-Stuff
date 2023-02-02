@@ -1,0 +1,21 @@
+.customBtn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $primaryContrastLight;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  background: linear-gradient(165deg, $primary 0%, $primary50 100%);
+  text-shadow: 1px 1px 3px rgba(1, 122, 108, 0.5),
+    -1px -1px 3px rgba(1, 122, 108, 0.5);
+  border: none;
+
+  &:hover {
+    background: linear-gradient(165deg, $primary75 0%, $primary25 100%);
+  }
+}

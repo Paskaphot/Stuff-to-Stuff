@@ -7,10 +7,10 @@
 @import "generic/_reset", "generic/_normalize", "generic/_base"; // (box-sizing, font size for rem, font-weight Hn, ...)
 
 // ELEMENTS (only one tag components )
-@import "elements/_container";
+@import "elements/_container", "elements/_buttons";
 
 //COMPONENTS (multiples tags components)
-@import "components/_header", "components/_triangle";
+@import "components/_header", "components/_triangle", "components/_selector";
 
 // PAGES
 @import "pages/_home";
