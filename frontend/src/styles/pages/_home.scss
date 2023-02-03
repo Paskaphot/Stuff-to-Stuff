@@ -1,5 +1,45 @@
 .home {
   .main {
-    margin-top: 100px;
+    margin-top: 50px;
+  }
+  .result {
+    padding-top: 20px;
+  }
+  .resultText {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4c4e52;
+    &__number {
+      color: $primary75;
+    }
+  }
+  .hoverCard {
+    position: relative;
+    cursor: pointer;
+    &--hippo {
+      &:hover {
+        &:before {
+          background-image: url("/images/CaptureHippo.png");
+        }
+      }
+    }
+    &--fer {
+      &:hover {
+        &:before {
+          background-image: url("/images/CaptureFer.png");
+        }
+      }
+    }
+    &:hover:before {
+      content: "";
+      position: absolute;
+      width: 232px;
+      height: 281px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -110%);
+      background-size: contain;
+    }
   }
 }

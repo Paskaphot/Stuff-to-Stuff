@@ -4,11 +4,14 @@ import Select from "react-select";
 function Selector({ options }) {
   const [selectOne, setSelectOne] = useState();
   const [selectTwo, setSelectTwo] = useState();
+  const [result, setResult] = useState();
 
   console.warn(selectOne);
   console.warn(selectTwo);
 
-  const compareClick = () => {};
+  const compareClick = () => {
+    setResult(true);
+  };
 
   return (
     <form className="selector">
@@ -51,6 +54,23 @@ function Selector({ options }) {
           Compare
         </button>
       </div>
+      {result ? (
+        <div className="result">
+          <div className="flexWrapper">
+            <p className="flexWrapper__item resultText">
+              <span className="resultText__number">1 </span>
+              <span className="hoverCard hoverCard--hippo">hippopotame</span>
+            </p>
+            <p className="isEqual isEqual--noShrink">=</p>
+            <p className="flexWrapper__item resultText">
+              <span className="resultText__number">1 250 </span>
+              <span className="hoverCard hoverCard--fer">fer à repasser</span>
+            </p>
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
     </form>
   );
 }

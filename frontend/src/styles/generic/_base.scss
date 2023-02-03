@@ -66,18 +66,22 @@ button:not(:disabled) {
   border: 0;
 }
 
-.isVersus {
+.isVersus,
+.isEqual {
   font-weight: 800;
   @include pxToRem(24);
   text-align: center;
-  color: $primary75;
+  color: $primary50;
 
   &--noShrink {
     flex: 1 0 auto;
     width: 65px;
   }
+}
 
-  span {
-    color: $primary25;
-  }
+.isVersus {
+  @include pxToRem(24);
+}
+.isEqual {
+  @include pxToRem(32);
 }
